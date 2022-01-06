@@ -19,22 +19,22 @@ const siteMapRoutes = [
     name: "Audio",
     path: "/audio",
   },
-  {
-    name: "Publishing",
-    path: "/publishing",
-  },
+  // {
+  //   name: "Publishing",
+  //   path: "/publishing",
+  // },
   {
     name: "Contact",
     path: "/contact",
   },
-  {
-    name: "Careers",
-    path: "/careers",
-  },
-  {
-    name: "Shop",
-    path: "/shop",
-  },
+  // {
+  //   name: "Careers",
+  //   path: "/careers",
+  // },
+  // {
+  //   name: "Shop",
+  //   path: "/shop",
+  // },
 ];
 
 export default siteMapRoutes;

@@ -6,11 +6,13 @@ import {
   Flex,
   Heading,
   Link as TextLink,
+  Text,
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 import { companyService } from "../BriefDescription/data";
+import { IoArrowForwardSharp } from "react-icons/io5";
 
 const CompanyServices = () => {
   return (
@@ -21,27 +23,51 @@ const CompanyServices = () => {
         justifyContent={"space-between"}
       >
         <Heading>Our Services</Heading>
-        
-         
-        
+
+        <Link href={"/services"}>
+          <TextLink borderRadius={50}>See All</TextLink>
+        </Link>
       </Flex>
       <Container maxW="container.xl" mt={5}>
         <Flex flexDirection={"row"}>
           {companyService.map((service, index) => (
-            <Link href={service.link} key={index}>
+            <Box key={index} ml={2}>
               <Box
                 backgroundColor={"gray.100"}
                 height={300}
-                width={220}
+                width={280}
                 borderRadius={5}
                 mr={1}
+                backgroundImage={`url(${service.image})`}
+                backgroundSize={"cover"}
+                backgroundPosition={"center"}
+                backgroundRepeat={"no-repeat"}
+                borderColor={"gray.50"}
+                borderWidth={1}
               ></Box>
-            </Link>
+              <Box mt={4}>
+                <Heading fontSize={18}>{service.name}</Heading>
+                <Box  mt={3} height={109}>
+                <Text>{service.description}</Text>
+                </Box>
+               <Link href={service.link}>
+               <Button
+                  mt={3}
+                  width={10}
+                  borderRadius={50}
+                  leftIcon={
+                    <IoArrowForwardSharp
+                      style={{
+                        fontSize: "1rem",
+                        marginLeft: "0.5rem",
+                        color: "#000",
+                      }}
+                    />
+                  }
+                /></Link>
+              </Box>
+            </Box>
           ))}
-          <Center width={"15%"}>
-          <Link href={"/services"}>
-            <Button borderRadius={50}>See All</Button></Link>
-          </Center>
         </Flex>
       </Container>
     </Container>

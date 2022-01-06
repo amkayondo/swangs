@@ -46,26 +46,26 @@ const TopNavigation = () => {
       path: "/audio",
       isActive: pageTitle.name === "Audio",
     },
-    {
-      name: "Publishing",
-      path: "/publishing",
-      isActive: pageTitle.name === "Publishing",
-    },
+    // {
+    //   name: "Publishing",
+    //   path: "/publishing",
+    //   isActive: pageTitle.name === "Publishing",
+    // },
     {
       name: "Contact",
       path: "/contact",
       isActive: pageTitle.name === "Contact",
     },
-    {
-      name: "Careers",
-      path: "/careers",
-      isActive: pageTitle.name === "Careers",
-    },
-    {
-      name: "Shop",
-      path: "/shop",
-      isActive: pageTitle.name === "Shop",
-    },
+    // {
+    //   name: "Careers",
+    //   path: "/careers",
+    //   isActive: pageTitle.name === "Careers",
+    // },
+    // {
+    //   name: "Shop",
+    //   path: "/shop",
+    //   isActive: pageTitle.name === "Shop",
+    // },
   ];
   const page:
     | {
@@ -113,7 +113,7 @@ const TopNavigation = () => {
           </Center>
         </Container>
 
-        <Flex>
+        <Flex mt={5}>
           <Box cursor="pointer">
             <Link href={"/"}>
               <Image

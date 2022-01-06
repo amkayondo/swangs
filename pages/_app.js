@@ -1,6 +1,8 @@
+import React, { useEffect } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import LayOut from "../src/infrastructure/components/LayOut";
-import '@fontsource/montserrat'
+import SplashScreen from "../src/features/splashScreen";
+import "@fontsource/montserrat";
 
 const colors = {
   brand: {
@@ -9,17 +11,26 @@ const colors = {
     700: "#2a69ac",
   },
   fonts: {
-    heading: 'montserrat',
-    body: 'montserrat',
+    heading: "montserrat",
+    body: "montserrat",
   },
 };
 
 const theme = extendTheme({ colors });
 
 function MyApp({ Component, pageProps }) {
+  const [isLoading, setIsLoading] = React.useState(false);
+  useEffect(() => {
+    setIsLoading(true);
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
+  if (isLoading) {
+    return <SplashScreen />;
+  }
   return (
     <ChakraProvider theme={theme}>
-     
       <LayOut>
         <Component {...pageProps} />
       </LayOut>

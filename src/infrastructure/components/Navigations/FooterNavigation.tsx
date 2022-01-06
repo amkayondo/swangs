@@ -23,7 +23,7 @@ const FooterNavigation = () => {
       paddingBottom={51}
       backgroundColor={"gray.50"}
       // height={400}
-      mt={22}
+      mt={39}
       borderRadius={12}
       mb={11}
     >
@@ -32,11 +32,7 @@ const FooterNavigation = () => {
           <Heading as="h2" size="xl" maxW={500}>
             Let's work together on your next project.
           </Heading>
-          <a
-            href={"https://twitter.com/Swangz_Avenue"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={"/contact"}>
             <Button
               leftIcon={<AiFillPhone />}
               title="GET IN TOUCH"
@@ -46,7 +42,7 @@ const FooterNavigation = () => {
             >
               schedule a call
             </Button>
-          </a>
+          </Link>
         </Flex>
       </Container>
       <Container maxW="container.lg" mt={-10}>

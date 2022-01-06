@@ -1,10 +1,14 @@
+import { Container } from "@chakra-ui/react";
 import React from "react";
+import FilmPageDetails from "../src/features/film/FilmPageDetails";
+import MovieShowCase from "../src/features/film/MovieShowCase";
 
 const Film = () => {
   return (
-    <div>
-      <h1>Film</h1>
-    </div>
+    <Container maxW={"container.xl"}>
+      <MovieShowCase />
+      <FilmPageDetails />
+    </Container>
   );
 };
 

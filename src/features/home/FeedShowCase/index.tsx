@@ -65,7 +65,8 @@ const FeedShowCase = () => {
         pt={"30%"}
         borderRadius={12}
       >
-        <Heading color={"white"} as="h1" size="4xl">
+        <Heading color={"white"} as="h1" size="4xl"
+        >
           Party Mood
         </Heading>
         <Heading

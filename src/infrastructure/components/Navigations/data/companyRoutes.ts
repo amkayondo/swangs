@@ -12,19 +12,19 @@ const companyRoutes = [
     path: "/blog",
   },
 
-  {
-    name: "Publishing",
-    path: "/publishing",
-  },
+  // {
+  //   name: "Publishing",
+  //   path: "/publishing",
+  // },
 
-  {
-    name: "Careers",
-    path: "/careers",
-  },
-  {
-    name: "Shop",
-    path: "/shop",
-  },
+  // {
+  //   name: "Careers",
+  //   path: "/careers",
+  // },
+  // {
+  //   name: "Shop",
+  //   path: "/shop",
+  // },
 ];
 
 export default companyRoutes;

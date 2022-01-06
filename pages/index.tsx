@@ -4,7 +4,8 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import BriefDescription from "../src/features/home/BriefDescription";
 import FeedShowCase from "../src/features/home/FeedShowCase";
-import CompanyServices from '../src/features/home/CompanyServices'
+import CompanyServices from "../src/features/home/CompanyServices";
+import OurPartners from "../src/features/home/OurPartners";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <FeedShowCase />
       <BriefDescription />
       <CompanyServices />
+      <OurPartners />
     </Container>
   );
 };
