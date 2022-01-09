@@ -11,10 +11,10 @@ export const OurAudioServicesData = [
       "A blend of innovative & technical skills. Hire us today for your audio and music production project in Kampala, Uganda and East Africa.",
     image: "/images/audio/audio_recording.jpg",
   },
-  {
-    title: "Mixing & Mastering",
-    description:
-      "We provide mixing and mastering services, the two most essential components of any professional audio post-production or studio recording.",
-    image: "/images/audio/mixing.jpg",
-  },
+  // {
+  //   title: "Mixing & Mastering",
+  //   description:
+  //     "We provide mixing and mastering services, the two most essential components of any professional audio post-production or studio recording.",
+  //   image: "/images/audio/mixing.jpg",
+  // },
 ];

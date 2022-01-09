@@ -14,13 +14,13 @@ export const companyService = [
     description:
       "Our studio delivers the best audio production in Kampala, Uganda & Africa with sound design and studio direction for TV & radio advertising.",
   },
-  {
-    name: "Events",
-    link: "/events",
-    image: "/images/services/events_production.png",
-    description:
-      "We are a full-service marketing and event planning company with vast experience in multiple industries.",
-  },
+  // {
+  //   name: "Events",
+  //   link: "/events",
+  //   image: "/images/services/events_production.png",
+  //   description:
+  //     "We are a full-service marketing and event planning company with vast experience in multiple industries.",
+  // },
   {
     name: "Label & Publishing",
     link: "/publishing",

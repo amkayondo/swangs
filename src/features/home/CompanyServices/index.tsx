@@ -29,7 +29,7 @@ const CompanyServices = () => {
         </Link>
       </Flex>
       <Container maxW="container.xl" mt={5}>
-        <Flex flexDirection={["column", "row"]}>
+        <Flex flexDirection={["column", "row"]} >
           {companyService.map((service, index) => (
             <Box key={index} ml={[0, 2]} mt={[7, 0]}>
               <Box

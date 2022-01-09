@@ -10,7 +10,7 @@ const OurAudioServices = () => {
       </Heading>
       <Box mt={[7, 10]}>
         <Flex
-          justifyContent={["", "space-between"]}
+          justifyContent={["", ""]}
           flexDirection={["column", "row"]}
         >
           {OurAudioServicesData.map((item, index) => (

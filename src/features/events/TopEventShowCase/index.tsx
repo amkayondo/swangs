@@ -21,13 +21,15 @@ const TopEventShowCase = () => {
         backgroundRepeat="no-repeat"
         borderRadius={10}
         height={440}
-        p={1}
+        p={[1,1]}
       >
-        <Container
+        <Flex
           maxW="container.xl"
           height={"440"}
           borderRadius={12}
-          paddingTop={["75%", "17%"]}
+          flexDirection={"column-reverse"}
+          ml={["4", "-2",]}
+          mt={["-4", "-5",]}
         >
           <Box
             maxW={260}
@@ -67,7 +69,7 @@ const TopEventShowCase = () => {
               </Button>
             </a>
           </Box>
-        </Container>
+        </Flex>
       </Container>
       <Container maxW="container.xl" mt={10}>
         <Flex justifyContent={"space-between"} flexDirection={["column", "row"]}>

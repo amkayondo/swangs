@@ -5,24 +5,20 @@ import { OurEventServicesData } from "./data";
 
 const OurEventServices = () => {
   return (
-    <Container maxW="container.xl" mx="auto" px={4} py={6} mt={[5, 10]}>
-      <Heading as="h2" size="xl" textAlign={"center"}>
+    <Container maxW="container.xl" mx="auto" px={4} py={6} mt={10}>
+      <Heading as="h2" size="xl">
         Our Event Services
       </Heading>
-      <Box mt={[2, 10]}>
-        <Flex
-          justifyContent={"space-between"}
-          flexDirection={["column", "row"]}
-        >
+      <Box mt={10}>
+        <Flex justifyContent={["", ""]}>
           {OurEventServicesData.map((item, index) => (
-            <Box key={index} ml={[0, 2]}>
+            <Box key={index} ml={2}>
               <Box
                 backgroundColor={"gray.100"}
                 height={350}
-                width={["100%", 350]}
+                width={350}
                 borderRadius={5}
-                mr={[0, 1]}
-                mt={[5,0]}
+                mr={1}
                 backgroundImage={`url(${item.image})`}
                 backgroundSize={"cover"}
                 backgroundPosition={"center"}
