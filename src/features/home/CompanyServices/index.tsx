@@ -31,11 +31,11 @@ const CompanyServices = () => {
       <Container maxW="container.xl" mt={5}>
         <Flex flexDirection={["column", "row"]}>
           {companyService.map((service, index) => (
-            <Box key={index} ml={[0, 2]} mt={[7,0]}>
+            <Box key={index} ml={[0, 2]} mt={[7, 0]}>
               <Box
                 backgroundColor={"gray.100"}
-                height={300}
-                width={280}
+                height={[200, 300]}
+                width={["100%", 280]}
                 borderRadius={5}
                 mr={1}
                 backgroundImage={`url(${service.image})`}
@@ -47,24 +47,25 @@ const CompanyServices = () => {
               ></Box>
               <Box mt={4}>
                 <Heading fontSize={18}>{service.name}</Heading>
-                <Box  mt={3} height={109}>
-                <Text>{service.description}</Text>
+                <Box mt={3} height={109}>
+                  <Text>{service.description}</Text>
                 </Box>
-               <Link href={service.link}>
-               <Button
-                  mt={[2, 3]}
-                  width={10}
-                  borderRadius={50}
-                  leftIcon={
-                    <IoArrowForwardSharp
-                      style={{
-                        fontSize: "1rem",
-                        marginLeft: "0.5rem",
-                        color: "#000",
-                      }}
-                    />
-                  }
-                /></Link>
+                <Link href={service.link}>
+                  <Button
+                    mt={[6, 3]}
+                    width={10}
+                    borderRadius={50}
+                    leftIcon={
+                      <IoArrowForwardSharp
+                        style={{
+                          fontSize: "1rem",
+                          marginLeft: "0.5rem",
+                          color: "#000",
+                        }}
+                      />
+                    }
+                  />
+                </Link>
               </Box>
             </Box>
           ))}

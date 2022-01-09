@@ -17,13 +17,16 @@ const AudioTopShowCase = () => {
           paddingTop={[0, 4]}
           paddingBottom={[0, 4]}
         >
-          <Container
+          <Flex
             maxW="container.xl"
             backgroundColor={["", "rgba(0, 0, 0, 0.19)"]}
             height={[200,"570"]}
             width={"100%"}
-            pt={["50%", "35%"]}
+            pt={["", "35%"]}
+            pl={["", "2%"]}
+            pb={["2", "0"]}
             borderRadius={[0, 12]}
+            flexDirection={["column-reverse", "column"]}
           >
             <Heading 
             display={["none", "block"]}
@@ -42,10 +45,10 @@ const AudioTopShowCase = () => {
             </Text>
             <Text 
             display={["block", "none"]}
-            as='h4' color={"white"}>
+            fontSize={"md"} color={"white"}>
               {audio.description}
             </Text>
-          </Container>
+          </Flex>
         </Container>
       ))}
     </>

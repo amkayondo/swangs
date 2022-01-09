@@ -27,7 +27,7 @@ const TopEventShowCase = () => {
           maxW="container.xl"
           height={"440"}
           borderRadius={12}
-          paddingTop={"17%"}
+          paddingTop={["75%", "17%"]}
         >
           <Box
             maxW={260}
@@ -72,7 +72,7 @@ const TopEventShowCase = () => {
       <Container maxW="container.xl" mt={10}>
         <Flex justifyContent={"space-between"} flexDirection={["column", "row"]}>
           <Box width={["100%", "70%"]}>
-            <Text fontSize={22}>
+            <Text fontSize={[15, 22]}>
               Ready to host an event or musical tour? Need some help planning
               and promoting it? You're in the right place. We offer Event
               Planning, Event Promotion and Event Production Services for Any
