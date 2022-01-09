@@ -27,7 +27,7 @@ const BlogFeed = () => {
           <Box mt={10}>
             <Text>No blog posts yet.</Text>
             <Link href={"/"}>
-              <Button mt={10}>Go to home page</Button>
+              <Button borderRadius={50} mt={10}>Go to home page</Button>
             </Link>
           </Box>
         </Flex>

@@ -7,15 +7,15 @@ const ContactDetails = () => {
     <Container maxW="container.xl">
       <Flex flexDirection={"column"} justifyContent={"center"} textAlign={"center"}>
         <Heading>Get in touch</Heading>
-        <Text mt={5} pl={"20%"} pr={"20%"}>
+        <Text mt={5} pl={["0","20%"]} pr={["0","20%"]}>
           To request a quote for your next project or discuss how we can help
           you with your event, music or video production needs, please fill out
           the form below or call the numbers below.
         </Text>
       </Flex>
-      <Flex justifyContent={"space-around"} mt={12}>
+      <Flex justifyContent={["", "space-around"]} mt={[2, 12]} flexDirection={["column", "row"]}>
         {ContactDetailsData.map((contact, index) => (
-          <Box key={index}>
+          <Box mt={[10, 0]} key={index}>
             <a href={contact.link} target="_blank" rel="noopener noreferrer">
               <Box>
                 <Center>
@@ -34,7 +34,7 @@ const ContactDetails = () => {
                 </Center>
               </Box>
               <Box
-                mt={2}
+                mt={[4, 2]}
                 textAlign={"center"}
                 maxW={300}
               >

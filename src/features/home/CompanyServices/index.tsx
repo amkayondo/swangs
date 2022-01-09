@@ -18,7 +18,7 @@ const CompanyServices = () => {
   return (
     <Container maxW="container.xl" mt={10}>
       <Flex
-        flexDirection={"row"}
+        flexDirection={["column", "row"]}
         alignItems={"center"}
         justifyContent={"space-between"}
       >
@@ -29,9 +29,9 @@ const CompanyServices = () => {
         </Link>
       </Flex>
       <Container maxW="container.xl" mt={5}>
-        <Flex flexDirection={"row"}>
+        <Flex flexDirection={["column", "row"]}>
           {companyService.map((service, index) => (
-            <Box key={index} ml={2}>
+            <Box key={index} ml={[0, 2]} mt={[7,0]}>
               <Box
                 backgroundColor={"gray.100"}
                 height={300}
@@ -52,7 +52,7 @@ const CompanyServices = () => {
                 </Box>
                <Link href={service.link}>
                <Button
-                  mt={3}
+                  mt={[2, 3]}
                   width={10}
                   borderRadius={50}
                   leftIcon={

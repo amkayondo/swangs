@@ -9,10 +9,10 @@ const Events = () => {
     <>
       <TopEventShowCase />
       <OurEventServices />
-      <Box mt={10} mb={"50px"}>
-        <Flex justifyContent={"center"} height={"100%"} alignItems={"center"}>
+      <Box mt={[-2, 10]} mb={"50px"}>
+        <Flex justifyContent={"center"} height={"100%"} alignItems={"center"} padding={5}>
           <Link href={"/contact"}>
-            <Button title="GET IN TOUCH" borderRadius="50" fontSize={17} padding={5}>
+            <Button title="GET IN TOUCH" borderRadius="50" width={["100%", "50%"]} fontSize={17} padding={5}>
               GET IN TOUCH
             </Button>
           </Link>

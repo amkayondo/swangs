@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import LayOut from "../src/infrastructure/components/LayOut";
+import { createBreakpoints } from "@chakra-ui/theme-tools";
 import SplashScreen from "../src/features/splashScreen";
 import "@fontsource/montserrat";
 

@@ -12,9 +12,9 @@ import React from "react";
 
 const TopEventShowCase = () => {
   return (
-    <Container maxW="container.xl">
+    <Container  maxW={["full", "container.xl"]}>
       <Container
-        maxW="container.xl"
+        maxW={["full", "container.xl"]}
         backgroundImage={`url("/images/events/gnlzamba.jfif")`}
         backgroundSize="cover"
         backgroundPosition="center"
@@ -70,8 +70,8 @@ const TopEventShowCase = () => {
         </Container>
       </Container>
       <Container maxW="container.xl" mt={10}>
-        <Flex justifyContent={"space-between"}>
-          <Box width={"70%"}>
+        <Flex justifyContent={"space-between"} flexDirection={["column", "row"]}>
+          <Box width={["100%", "70%"]}>
             <Text fontSize={22}>
               Ready to host an event or musical tour? Need some help planning
               and promoting it? You're in the right place. We offer Event
@@ -79,14 +79,14 @@ const TopEventShowCase = () => {
               Type of Affair.
             </Text>
           </Box>
-          <Box width={"30%"}>
+          <Box width={["100%", "30%"]} mt={[6, 0]}>
             <Flex
               justifyContent={"center"}
               height={"100%"}
               alignItems={"center"}
             >
               <Link href={"/contact"}>
-                <Button title="GET IN TOUCH" borderRadius="50">
+                <Button title="GET IN TOUCH" width={["100%", "50%"]} borderRadius="50">
                   GET IN TOUCH
                 </Button>
               </Link>

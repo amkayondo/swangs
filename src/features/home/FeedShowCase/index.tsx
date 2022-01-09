@@ -47,9 +47,9 @@ const FeedShowCase = () => {
   ];
   return (
     <Container
-      maxW="container.xl"
+      maxW={["full", "container.xl"]}
       backgroundColor={"gray.100"}
-      height={"600"}
+      height={["300", "600"]}
       borderRadius={12}
       backgroundImage={`url("/images/azawi/party_01.jfif")`}
       backgroundSize="cover"
@@ -58,16 +58,27 @@ const FeedShowCase = () => {
       paddingBottom={4}
     >
       <Container
-        maxW="container.xl"
+        maxW={["full", "container.xl"]}
         backgroundColor={"rgba(0, 0, 0, 0.19)"}
-        height={"570"}
-        width={"100%"}
+        height={["250", "570"]}
         pt={"30%"}
         borderRadius={12}
       >
-        <Heading color={"white"} as="h1" size="4xl"
-        >
+        <Heading color={"white"} display={["block", "none"]} as="h2" size="2xl">
           Party Mood
+        </Heading>
+        <Heading display={["none", "block"]} color={"white"} as="h1" size="4xl">
+          Party Mood
+        </Heading>
+        <Heading
+          color={"white"}
+          fontWeight={"light"}
+          mt={11}
+          as="h3"
+          size="lg"
+          display={["block", "none"]}
+        >
+          Azawi
         </Heading>
         <Heading
           color={"white"}
@@ -75,16 +86,16 @@ const FeedShowCase = () => {
           as="h2"
           mt={11}
           size="2xl"
+          display={["none", "block"]}
         >
           Azawi
         </Heading>
         <Flex mt={22}>
           {links.map((link, index) => (
             <div key={index}>
-              <a href={link.path}
-              target="_blank"
-              rel="noopener noreferrer"
-              >{link.icon}</a>
+              <a href={link.path} target="_blank" rel="noopener noreferrer">
+                {link.icon}
+              </a>
             </div>
           ))}
         </Flex>

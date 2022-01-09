@@ -4,7 +4,7 @@ import React from "react";
 const BriefDescription = () => {
   return (
     <Container
-      maxW="container.xl"
+      maxW={["full", "container.xl"]}
       mt={4}
       //   height={"232"}
       paddingTop={4}
@@ -15,8 +15,8 @@ const BriefDescription = () => {
         alignItems={"center"}
         flexDirection={"column"}
       >
-        <Heading>This is Swangz Avenue</Heading>
-        <Text width={"50%"} textAlign={"center"} mt={4}>
+        <Heading textAlign={"center"}>This is Swangz Avenue</Heading>
+        <Text width={["100%", "50%"]} textAlign={"center"} mt={4}>
           With years of experience, Swangz Avenue is one of the leading Audio
           and Film Production Companies in Kampala, Uganda, and East Africa,
           also specializing in video production, TV Commercial (TVC) production,

@@ -18,7 +18,7 @@ import siteMapRoutes from "./data/siteMapRoutes";
 
 const FooterNavigation = () => {
   return (
-    <Box
+    <Container
       paddingTop={22}
       paddingBottom={51}
       backgroundColor={"gray.50"}
@@ -26,14 +26,19 @@ const FooterNavigation = () => {
       mt={39}
       borderRadius={12}
       mb={11}
+      maxW={["full", "container.xl"]}
     >
-      <Container maxW="container.lg" mt={10}>
-        <Flex justifyContent={"space-between"}>
+      <Container maxW={"container.lg"} mt={10}>
+        <Flex
+          justifyContent={"space-between"}
+          flexDirection={["column", "row"]}
+        >
           <Heading as="h2" size="xl" maxW={500}>
             Let's work together on your next project.
           </Heading>
           <Link href={"/contact"}>
             <Button
+              mt={["10", "0"]}
               leftIcon={<AiFillPhone />}
               title="GET IN TOUCH"
               borderRadius="50"
@@ -58,8 +63,8 @@ const FooterNavigation = () => {
         />
       </Container>
       <Container maxW="container.lg" mt={10}>
-        <Flex justifyContent={"space-between"}>
-          <Flex flexDirection={"column"} maxW={320}>
+        <Flex flexDirection={["column", "row"]}>
+          <Flex flexDirection={"column"}>
             <Box width={200}>
               <Image
                 src={"/images/logos/logowithwords.png"}
@@ -76,7 +81,7 @@ const FooterNavigation = () => {
               </Text>
             </Box>
           </Flex>
-          <Flex ml={10} flexDirection={"column"}>
+          <Flex ml={[0, 10]} mt={[4, 0]} flexDirection={"column"}>
             <Box>
               <Text fontWeight={"bold"}>Site Map </Text>
             </Box>
@@ -92,7 +97,7 @@ const FooterNavigation = () => {
               </Flex>
             </Box>
           </Flex>
-          <Flex ml={10} flexDirection={"column"}>
+          <Flex  ml={[0, 10]} mt={[4, 0]}  flexDirection={"column"}>
             <Box>
               <Text fontWeight={"bold"}>Company</Text>
             </Box>
@@ -108,7 +113,7 @@ const FooterNavigation = () => {
               </Flex>
             </Box>
           </Flex>
-          <Flex ml={10} flexDirection={"column"}>
+          <Flex  ml={[0, 10]} mt={[4, 0]}  flexDirection={"column"}>
             <Box>
               <Text fontWeight={"bold"}>Swangs Avenue</Text>
             </Box>
@@ -121,8 +126,8 @@ const FooterNavigation = () => {
             </Box>
           </Flex>
         </Flex>
-        <Box mt={8}>
-          <Flex flexDirection={"row"}>
+        <Box mt={8} ml={[-2, 0]}>
+          <Flex flexDirection={["column", "row"]}>
             {companySocialMedia.map((socialMedia: any, index: number) => (
               <a
                 key={index}
@@ -153,13 +158,13 @@ const FooterNavigation = () => {
       </Container>
 
       <Container maxW="container.lg" mt={1}>
-        <Flex flexDirection="row" mt={17} justifyContent={"space-between"}>
+        <Flex flexDirection={["column", "row"]} mt={17} justifyContent={"space-between"}>
           <Box>
             <Text fontSize="sm" fontWeight={"bold"}>
               © Swangz Avenue 2022
             </Text>
           </Box>
-          <Box>
+          <Box mt={[2, 0]}>
             <Flex>
               <Text fontSize="sm">Crafted with ❤ by </Text>
               <a
@@ -175,7 +180,7 @@ const FooterNavigation = () => {
           </Box>
         </Flex>
       </Container>
-    </Box>
+    </Container>
   );
 };
 

@@ -5,7 +5,7 @@ import FooterNavigation from "../Navigations/FooterNavigation";
 
 const LayOut = (prop: { children: React.ReactNode }) => {
   return (
-    <Container maxW="container.xl">
+    <>
       <TopNavigation />
       <div
         style={{
@@ -15,7 +15,7 @@ const LayOut = (prop: { children: React.ReactNode }) => {
         {prop.children}
       </div>
       <FooterNavigation />
-    </Container>
+    </>
   );
 };
 
